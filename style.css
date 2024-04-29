@@ -1,0 +1,107 @@
+body{
+    font-family: "Overpass", sans-serif;
+    margin: 0px;
+    background-color: hsl(216, 12%, 8%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1,p{
+    margin: 0px;
+}
+
+p{
+    font-weight:400;
+    color: hsl(217, 12%, 63%);
+}
+
+.container{
+    width: 300px;
+    padding: 40px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 20px;
+    /* box-sizing: border-box; */
+    position: relative;
+}
+
+h1{
+    margin: 16px 0px;
+}
+
+.image-holder{
+    width: 24px;
+    height: 24px;
+    background-color: hsla(216, 12%, 54%, 0.096);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.ratings-holder{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.ratings-holder > button{
+    background-color:  hsla(216, 12%, 54%, 0.096);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: white;
+}
+
+.submit{
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    transition: background-color color 0.15s;
+}
+
+.submit:hover{
+    background-color: white;
+    color:  hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+.thank-state{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 30px;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+}
+
+.rating-display{
+    background-color: hsla(216, 12%, 54%, 0.096);
+    width: fit-content;
+    margin: 16px auto;
+    padding: 10px;
+    border-radius: 20px;
+    color: hsl(25, 97%, 53%);
+}
+
+button.pressed{
+    background-color: hsl(25, 97%, 53%);
+}
